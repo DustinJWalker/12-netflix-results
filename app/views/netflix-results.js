@@ -10,7 +10,6 @@ export default class NetflixResultsView {
   }
 
   render() {
-    console.log(this);
     document.querySelector('.netflix__show-title').innerText = this.model.show - title;
     document.querySelector('.netflix__category').innerText = this.model.category;
     document.querySelector('.netflix__rating').innerText = this.model.rating;

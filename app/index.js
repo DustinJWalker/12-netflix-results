@@ -3,7 +3,7 @@ import UserView from './views/netflix-results';
 
 
 // getting api data
-const uv = new UserView(doucument.querySelector('.user'), {});
+const uv = new UserView(document.querySelector('.user'), {});
 // fetch request
 fetch('http://netflixroulette.net/api/api.php?title=Attack%20on%20titan')
 .then((result) => result.json())

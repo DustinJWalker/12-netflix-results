@@ -16,7 +16,7 @@ input {
 }
 
 button {
-  outline: 0;
+  border: 0;
   background-color: blue;
   color: white;
 }
@@ -28,5 +28,16 @@ button {
 
 .results__container {
   display: flex;
-justify-content: center;
+  justify-content: center;
+}
+
+.results__box {
+  max-width: 60rem;
+  margin: 1rem;
+  overflow: auto;
+  background: grey;
+}
+
+.results__box--content  {
+  padding: 1rem;
 }
