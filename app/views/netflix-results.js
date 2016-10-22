@@ -10,12 +10,12 @@ export default class NetflixResultsView {
   }
 
   render() {
-    document.querySelector('.netflix__show-title').innerText = this.model.show - title;
+    document.querySelector('.netflix__show-title').innerText = this.model.show_title;
     document.querySelector('.netflix__category').innerText = this.model.category;
     document.querySelector('.netflix__rating').innerText = this.model.rating;
-    document.querySelector('.netflix__poster').innerText = this.model.poster;
+    document.querySelector('.netflix__poster').src = this.model.poster;
     document.querySelector('.netflix__summary').innerText = this.model.summary;
-    document.querySelector('.netflix__show-cast').innerText = this.model.cast;
+    document.querySelector('.netflix__show-cast').innerText = this.model.show_cast;
   }
 
 }

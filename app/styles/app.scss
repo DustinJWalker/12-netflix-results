@@ -13,32 +13,39 @@ body {
 input {
   display: flex;
   flex-grow: 1;
+  height: 6vh;
+  padding: 0.5rem;
   border: 0;
 }
 
 button {
+  width: 12vh;
   border: 0;
   background-color: #5783f2;
   color: white;
 }
 
-.results {
-  max-width: 60rem;
-  margin: 1rem;
-}
+
+
 
 .results__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+
+  max-width: 60rem;
 }
 
 .results__box {
   max-width: 60rem;
   padding: 1rem;
-  overflow: auto;
   background: #ccced1;
+  overflow: auto;
 }
 
 .results__box--content {
   padding: 1rem;
+}
+
+.netflix__poster  {
+  max-width: 30%;
 }
