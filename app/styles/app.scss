@@ -20,8 +20,11 @@ body {
 
 .container  {
   padding: 2rem;
-  position: relative;
-  transform: translate(25%, 0%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
 
 .search-form  {
@@ -47,9 +50,7 @@ body {
 .results__container {
   display: flex;
 
-  // position: relative;
-  // transform: translate(15%, 160%);
-  // max-width: 60rem;
+
 }
 
 .search__result {
