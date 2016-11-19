@@ -6,31 +6,29 @@
 @import 'box-sizing';
 
 body {
+  margin: 0 auto;
   background: #000;
 
 }
 
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
 
-
-
-
-.page  {
+.container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
   max-width: 50rem;
 }
 
-.container  {
-  padding: 2rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-}
-
-.search-form  {
+.search-form {
   display: flex;
   flex-grow: 1;
-
 
   &__input {
     flex-grow: 1;
@@ -46,10 +44,8 @@ body {
 
 }
 
-
 .results__container {
   display: flex;
-
 
 }
 
@@ -65,13 +61,13 @@ body {
   padding: 1rem;
 }
 
-.img__parent  {
+.img__parent {
   display: flex;
   position: relative;
   transform: translate(40%, -50%);
 }
 
-.netflix__poster  {
+.netflix__poster {
   max-width: 60%;
   height: 35vh;
 }
